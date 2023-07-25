@@ -17,8 +17,7 @@
 <br>
 <br>
 
-Your name: ${param.employeeName}
-
+<h2>Your name: ${param.employeeName}</h2>
 
 </body>
 </html>
