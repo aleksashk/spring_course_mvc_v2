@@ -1,5 +1,7 @@
 package com.aleksandrphilimonov.spring.mvc;
 
+import com.aleksandrphilimonov.spring.mvc.validation.CheckEmail;
+
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
@@ -35,6 +37,9 @@ public class Employee {
     @Pattern(regexp = "\\d{3}-\\d{3}-\\d{2}", message = "Please use pattern xxx-xxx-xx")
     private String phoneNumber;
 
+    @CheckEmail
+    private String email;
+
     public Employee() {
         departments = new HashMap<>();
         departments.put("IT", "Information Technology");
@@ -50,6 +55,14 @@ public class Employee {
         languageList.put("English", "EN");
         languageList.put("Deutch", "DE");
         languageList.put("Franch", "FR");
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPhoneNumber() {
