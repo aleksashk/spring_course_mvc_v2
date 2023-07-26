@@ -25,6 +25,7 @@
     Surname
     <br><br>
     <form:input path="surname"/>
+    <form:errors path="surname"/>
     <br><br>
     Salary
     <form:input path="salary"/>
