@@ -17,11 +17,26 @@ public class Employee {
 
     private String carBrand;
 
+    private Map<String, String> carBrands;
+
     public Employee() {
         departments = new HashMap<>();
         departments.put("IT", "Information Technology");
         departments.put("HR", "Human Resources");
         departments.put("Sales", "Sales");
+
+        carBrands = new HashMap<>();
+        carBrands.put("Audi", "Audi");
+        carBrands.put("BMV", "BMV");
+        carBrands.put("Skoda", "Skoda");
+    }
+
+    public Map<String, String> getCarBrands() {
+        return carBrands;
+    }
+
+    public void setCarBrands(Map<String, String> carBrands) {
+        this.carBrands = carBrands;
     }
 
     public String getCarBrand() {

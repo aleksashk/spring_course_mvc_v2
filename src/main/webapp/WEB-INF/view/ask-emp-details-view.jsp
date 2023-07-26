@@ -34,11 +34,9 @@
     </form:select>
     <br><br>
     <h3>Which car do you want?</h3>
-    BMV<form:radiobutton path="carBrand" value="BMV"/>
-    Audi<form:radiobutton path="carBrand" value="Audi"/>
-    Mercedes-Benz<form:radiobutton path="carBrand" value="Mercedes-Benz"/>
+    <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
 
-
+    <br><br>
     <input type="submit" value="ok">
 </form:form>
 
