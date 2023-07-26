@@ -33,6 +33,11 @@
         <form:options items="${employee.departments}"/>
     </form:select>
     <br><br>
+    <h3>Which car do you want?</h3>
+    BMV<form:radiobutton path="carBrand" value="BMV"/>
+    Audi<form:radiobutton path="carBrand" value="Audi"/>
+    Mercedes-Benz<form:radiobutton path="carBrand" value="Mercedes-Benz"/>
+
 
     <input type="submit" value="ok">
 </form:form>

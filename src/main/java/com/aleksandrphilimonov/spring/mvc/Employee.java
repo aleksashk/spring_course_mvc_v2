@@ -15,19 +15,29 @@ public class Employee {
 
     private Map<String, String> departments;
 
-    public Map<String, String> getDepartments() {
-        return departments;
-    }
-
-    public void setDepartments(Map<String, String> departments) {
-        this.departments = departments;
-    }
+    private String carBrand;
 
     public Employee() {
         departments = new HashMap<>();
         departments.put("IT", "Information Technology");
         departments.put("HR", "Human Resources");
         departments.put("Sales", "Sales");
+    }
+
+    public String getCarBrand() {
+        return carBrand;
+    }
+
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
+    }
+
+    public Map<String, String> getDepartments() {
+        return departments;
+    }
+
+    public void setDepartments(Map<String, String> departments) {
+        this.departments = departments;
     }
 
     public String getName() {
