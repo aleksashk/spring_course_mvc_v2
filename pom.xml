@@ -63,8 +63,6 @@
       <scope>provided</scope>
     </dependency>
 
-
-
   </dependencies>
   <build>
     <finalName>spring_course_mvc</finalName>
