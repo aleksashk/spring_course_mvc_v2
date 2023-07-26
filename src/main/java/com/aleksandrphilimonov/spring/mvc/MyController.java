@@ -36,7 +36,7 @@ public class MyController {
 //        return "show-emp-details-view";
 //    }
 
-    @RequestMapping("showDetails")
+    @RequestMapping("/showDetails")
     public String showDetails(@RequestParam("employeeName") String empName, Model model) {
         empName = "Mr. " + empName;
         model.addAttribute("nameAttribute", empName);
