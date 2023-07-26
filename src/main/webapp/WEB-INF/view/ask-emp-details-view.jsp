@@ -37,8 +37,6 @@
     <br><br>
 
     <input type="submit" value="ok">
-
-    <input type="submit" value="OK"/>
 </form:form>
 
 </body>
