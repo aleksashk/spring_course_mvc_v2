@@ -37,7 +37,7 @@ public class Employee {
     @Pattern(regexp = "\\d{3}-\\d{3}-\\d{2}", message = "Please use pattern xxx-xxx-xx")
     private String phoneNumber;
 
-    @CheckEmail
+    @CheckEmail(value = "abc.com", message = "email must ends with abc.com")
     private String email;
 
     public Employee() {
