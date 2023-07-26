@@ -30,6 +30,8 @@
 <br><br>
 <h2>Your department: ${employee.carBrand}</h2>
 <br><br>
+<h2>Phone number: ${employee.phoneNumber}</h2>
+<br><br>
 <h2>Your languages:</h2>
 <ul>
     <c:forEach var="lang" items="${employee.languages}">

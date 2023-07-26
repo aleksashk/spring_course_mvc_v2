@@ -3,6 +3,7 @@ package com.aleksandrphilimonov.spring.mvc;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.HashMap;
 import java.util.Map;
@@ -30,6 +31,9 @@ public class Employee {
     private String[] languages;
 
     private Map<String, String> languageList;
+    
+    @Pattern(regexp = "\\d{3}-\\d{3}-\\d{2}", message = "Please use pattern xxx-xxx-xx")
+    private String phoneNumber;
 
     public Employee() {
         departments = new HashMap<>();
@@ -46,6 +50,14 @@ public class Employee {
         languageList.put("English", "EN");
         languageList.put("Deutch", "DE");
         languageList.put("Franch", "FR");
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public Map<String, String> getLanguageList() {

@@ -33,6 +33,12 @@
     <form:errors path="salary"/>
 
     <br><br>
+
+    PhoneNumber
+    <form:input path="phoneNumber"/>
+    <form:errors path="phoneNumber"/>
+
+    <br><br>
     Department
     <form:select path="department">
         <form:options items="${employee.departments}"/>
