@@ -37,7 +37,7 @@
     <form:radiobuttons path="carBrand" items="${employee.carBrands}"/>
     <br><br>
     <h3>Foreign languages?</h3>
-    <form:checkboxes path="languages" items="${employee.languages}"/>
+    <form:checkboxes path="languages" items="${employee.languageList}"/>
 
     <br><br>
     <input type="submit" value="ok">
