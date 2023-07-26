@@ -1,6 +1,7 @@
 package com.aleksandrphilimonov.spring.mvc;
 
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.HashMap;
@@ -11,7 +12,7 @@ public class Employee {
     @Size(min = 4, max = 54, message = "name must be min 2 symbols")
     private String name;
 
-    @NotNull(message = "surname is required fiels")
+    @NotEmpty(message = "surname is required field")
     private String surname;
 
     private int salary;
