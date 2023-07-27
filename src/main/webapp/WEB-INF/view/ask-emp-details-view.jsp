@@ -17,7 +17,7 @@
 <br>
 <br>
 
-<form:form action="showDetails" modelAttribute="employee" method="get">
+<form:form action="showDetails" modelAttribute="employee" method="post">
     Name
     <br><br>
     <form:input path="name"/>
